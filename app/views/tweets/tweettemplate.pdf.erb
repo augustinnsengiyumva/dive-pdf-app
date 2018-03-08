@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Report</title>
+   
+  </head>
+  <body>
+    <h1>All tweets</h1>
+  <table>
+  <tr>
+    <th>name</th>
+    <th>Content</th></th>
+  </tr>
+
+<% @tweets.each do |tweet| %>
+  <tr>
+    <td><%= tweet.name %></td>
+    <td><%= tweet.content %></td>
+  </tr>
+<% end %>
+</table>
+
+  </body>
+</html>

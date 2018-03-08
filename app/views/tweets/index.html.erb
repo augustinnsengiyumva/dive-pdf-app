@@ -1,0 +1,17 @@
+<h1>All Tweets</h1>
+<%= link_to "New Tweet", '/tweets/new'%>
+<%= link_to "Generate pdf report", 'tweets.pdf'%>
+<table>
+  <tr>
+    <th>name</th>
+    <th>Content</th></th>
+  </tr>
+
+<% @tweets.each do |tweet| %>
+  <tr>
+    <td><%= tweet.name %></td>
+    <td><%= tweet.content %></td>
+  </tr>
+<% end %>
+</table>
+
